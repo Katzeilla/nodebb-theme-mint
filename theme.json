@@ -1,7 +1,6 @@
 {
-    "id": "nodebb-theme-persona",
-    "name": "Persona",
-    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona",
-    "screenshot": "screenshot.png"
+    "id": "nodebb-theme-mint",
+    "name": "Mint",
+    "description": "Mint is a responsive and opinionated theme for NodeBB.",
+    "url": "https://github.com/Katzeilla/nodebb-theme-mint"
 }
