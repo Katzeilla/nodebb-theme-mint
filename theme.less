@@ -1,1 +1,66 @@
-@import "../nodebb-theme-persona/theme";
+@import "./less/bootstrap/bootstrap";
+@import "./less/persona";
+
+.topic .pagination-block .progress-bar {
+	background-color: #7DC880;
+}
+
+.btn {
+	border: 0px;
+}
+
+.btn-primary, .fab {
+	background-color: #4CAF50;
+
+	&:focus, &:hover {
+	               background-color: darken(#4CAF50, 10%);
+	}
+}
+
+.btn-info {
+	background-color: #7DC880;
+	&:focus, &:hover {
+	               background-color: darken(#7DC880, 10%);
+	}
+}
+
+.open > .dropdown-toggle.btn-info {
+	background-color: #7DC880;
+}
+
+
+a {
+	color: #35b198;
+	&:focus, &:hover {
+	               color: darken(#35b198, 10%);
+	}
+}
+
+// side menu list item
+.menu-section-list a:hover, .menu-section-list button:hover {
+	color: #FFF;
+}
+
+
+// taskbar icon
+.taskbar .navbar-nav li.taskbar-composer a, .taskbar .navbar-nav li.taskbar-composer a:active, .taskbar .navbar-nav li.taskbar-composer a:focus, .taskbar .navbar-nav li.taskbar-composer a:hover {
+		background-color: #26a69a;
+}
+
+
+.category > ul > li .avatar .select:hover .fa-check {
+	border: 1px solid #4CAF50;
+	color: #4CAF50;
+}
+
+.taskbar .navbar-nav li.taskbar-chat.new::after, .unread-count::after {
+	border: 0px;
+	background-color: #4CAF50;
+}
+
+.post-tools {
+        a {
+		color: #35b198;
+	}
+}
+
