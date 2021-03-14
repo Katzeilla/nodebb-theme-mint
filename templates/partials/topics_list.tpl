@@ -41,8 +41,7 @@
 				<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !topics.pinned -->hide<!-- ENDIF !topics.pinned -->" title="[[topic:pinned]]"></i>
 				<i component="topic/locked" class="fa fa-lock <!-- IF !topics.locked -->hide<!-- ENDIF !topics.locked -->" title="[[topic:locked]]"></i>
 				<i component="topic/moved" class="fa fa-arrow-circle-right <!-- IF !topics.oldCid -->hide<!-- ENDIF !topics.oldCid -->" title="[[topic:moved]]"></i>
-				<!-- BEGIN icons -->@value<!-- END icons -->
-
+				{{{each topics.icons}}}{@value}{{{end}}}
 				<!-- IF !topics.noAnchor -->
 				<a href="{config.relative_path}/topic/{topics.slug}<!-- IF topics.bookmark -->/{topics.bookmark}<!-- ENDIF topics.bookmark -->" itemprop="url">{topics.title}</a><br />
 				<!-- ELSE -->
@@ -57,9 +56,9 @@
 
 				<!-- IF topics.tags.length -->
 				<span class="tag-list hidden-xs">
-					<!-- BEGIN tags -->
+					{{{each topics.tags}}}
 					<a href="{config.relative_path}/tags/{topics.tags.value}"><span class="tag" style="<!-- IF topics.tags.color -->color: {topics.tags.color};<!-- ENDIF topics.tags.color --><!-- IF topics.tags.bgColor -->background-color: {topics.tags.bgColor};<!-- ENDIF topics.tags.bgColor -->">{topics.tags.valueEscaped}</span></a>
-					<!-- END tags -->
+					{{{end}}}
 					<small>&bull;</small>
 				</span>
 				<!-- ENDIF topics.tags.length -->
