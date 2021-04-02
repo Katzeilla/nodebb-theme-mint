@@ -2,7 +2,7 @@
 
 generated with `tree -d`
 
-.
+```.
 ├── languages
 │   ├── de
 │   ├── en-GB
@@ -45,3 +45,4 @@ generated with `tree -d`
         └── topic
 
 40 directories
+```
