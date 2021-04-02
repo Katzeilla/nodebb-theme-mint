@@ -1,66 +1,76 @@
 @import "./less/bootstrap/bootstrap";
 @import "./less/persona";
 
-.topic .pagination-block .progress-bar {
-	background-color: #7DC880;
-}
+//////////////////////////////////////////
+//
+// This file contains all the custom styling rules for this theme
+//
+// https://github.com/katzeilla/nodebb-theme-mint/theme.less
+//
+//////////////////////////////////////////
 
+// override bootstrap's default variables
+@brand-primary:         #4caf50; // mint's primary color
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+@mint-link:		#35b198; // clickable link
+@mint-primary:		@brand-primary;
+@mint-secondary:	#7dc880;
+
+// borderless button
 .btn {
 	border: 0px;
 }
 
+// primary buttons and taskbar icons 
 .btn-primary, .fab {
-	background-color: #4CAF50;
+	background-color: @mint-primary;
 
 	&:focus, &:hover {
-	               background-color: darken(#4CAF50, 10%);
+	               background-color: darken(@mint-primary, 10%);
 	}
 }
 
+// secondary buttons
 .btn-info {
-	background-color: #7DC880;
+	background-color: @mint-secondary;
 	&:focus, &:hover {
-	               background-color: darken(#7DC880, 10%);
+	               background-color: darken(@mint-secondary, 10%);
 	}
 }
 
+// dropdown toggle buttons when clicked open
 .open > .dropdown-toggle.btn-info {
-	background-color: #7DC880;
+	background-color: @mint-secondary;
 }
 
-
+// clickable links
 a {
-	color: #35b198;
+	color: @mint-link;
 	&:focus, &:hover {
-	               color: darken(#35b198, 10%);
+	               color: darken(@mint-link, 10%);
 	}
 }
 
-// side menu list item
+// override color for links in menu selection list, otherwise they will
+// inherit @mint-link from the previous rule.
 .menu-section-list a:hover, .menu-section-list button:hover {
-	color: #FFF;
+	color: #FFF; // white
 }
 
-
-// taskbar icon
-.taskbar .navbar-nav li.taskbar-composer a, .taskbar .navbar-nav li.taskbar-composer a:active, .taskbar .navbar-nav li.taskbar-composer a:focus, .taskbar .navbar-nav li.taskbar-composer a:hover {
-		background-color: #26a69a;
+// set color for reading progress bar on small screen
+.topic > .pagination-block .progress-bar {
+	background-color: @mint-secondary;
 }
 
-
-.category > ul > li .avatar .select:hover .fa-check {
-	border: 1px solid #4CAF50;
-	color: #4CAF50;
-}
-
-.taskbar .navbar-nav li.taskbar-chat.new::after, .unread-count::after {
+// unread new post/new message/new notification counter
+.taskbar .navbar-nav li.taskbar-chat.new::after, .unread-count::after, 
+.notification-list-mobile .unread a::after {
 	border: 0px;
-	background-color: #4CAF50;
+	background-color: @mint-primary;
 }
 
-.post-tools {
-        a {
-		color: #35b198;
-	}
-}
 
