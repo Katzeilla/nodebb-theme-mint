@@ -1,4 +1,4 @@
-<!-- BEGIN posts -->
+{{{each posts}}}
 <li>
     <a href="{config.relative_path}/post/{posts.pid}">
         <!-- IF posts.user.picture -->
@@ -20,7 +20,7 @@
 <!-- IF !@last -->
 <li role="separator" class="divider"></li>
 <!-- ENDIF -->
-<!-- END posts -->
+{{{end}}}
 <!-- IF multiplePages -->
 <li class="text-center">
     <a href="{url}">

@@ -55,13 +55,14 @@
 <!-- ENDIF posts.ip -->
 <!-- ENDIF posts.display_moderator_tools -->
 
-<!-- BEGIN posts.tools -->
+{{{each posts.tools}}}
 <li role="presentation">
 	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-fw {posts.tools.icon}"></i></span> {{posts.tools.html}}
 	</a>
 </li>
-<!-- END posts.tools -->
+{{{end}}}
+
 <!-- IF posts.toolsVisible -->
 <li role="presentation" class="divider"></li>
 <!-- ENDIF posts.toolsVisible -->
