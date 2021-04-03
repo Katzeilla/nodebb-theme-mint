@@ -2,8 +2,6 @@
 	<!-- IMPORT partials/account/header.tpl -->
 
 	<div class="row">
-		<h1>{title}</h1>
-
 		<!-- IF !posts.length -->
 			<div class="alert alert-warning text-center">{noItemsFoundKey}</div>
 		<!-- ENDIF !posts.length -->

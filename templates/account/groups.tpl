@@ -2,7 +2,6 @@
 	<!-- IMPORT partials/account/header.tpl -->
 
 	<div class="row">
-		<h1>[[pages:{template.name}, {username}]]</h1>
 	</div>
 	
 	<div class="groups list">

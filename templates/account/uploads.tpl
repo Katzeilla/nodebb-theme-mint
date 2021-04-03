@@ -1,7 +1,6 @@
 <div class="account">
 	<!-- IMPORT partials/account/header.tpl -->
 	<div class="row">
-		<h1>{title}</h1>
 
         <!-- IF privateUploads -->
         <div class="alert alert-info text-center">[[uploads:private-uploads-info]]</div>
