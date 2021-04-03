@@ -68,8 +68,8 @@
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
 
 			<!-- IF email -->
-			<span>[[user:email]]</span>
-			<strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong>
+			<!-- <span>[[user:email]]</span>
+			     <strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong> -->
 			<!-- ENDIF email -->
 
 			<!-- IF websiteName -->
