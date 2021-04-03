@@ -22,6 +22,7 @@
 
 @input-border-focus:	@mint-secondary;
 
+
 // borderless button
 .btn {
 	border: 0px;
@@ -75,4 +76,19 @@ a {
 	background-color: @mint-primary;
 }
 
+// loading progress bar: spinning circle
+#nprogress .spinner-icon {
+	border-top-color:  @mint-secondary;
+	border-left-color: @mint-secondary;
+}
+
+// loading progress bar header
+#nprogress .peg {
+	box-shadow: 0 0 10px @mint-primary , 0 0 5px @mint-primary;
+}
+
+//loading progress bar
+#nprogress .bar {
+	background: @mint-secondary;
+}
 
