@@ -106,7 +106,7 @@
 							</li>
 							<!-- XXX start of mobile collapsible items -->
 							<li class="visible-mobile">
-								<a component="header/noprofilelink" data-toggle="collapse" data-target=".user-status-toggle-collapsible" role="button" aria-expanded="false" aria-controls=".user-status-toggle-collapsible"  href="#">
+								<a component="header/noprofilelink" id="user-status-collapse-toggle" data-toggle="collapse" data-target=".user-status-toggle-collapsible" role="button" aria-expanded="false" aria-controls=".user-status-toggle-collapsible"  href="#">
 									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 							</li>
