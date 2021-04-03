@@ -99,14 +99,14 @@
 									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
 								</a>
 							</li>
-							<li class="invisible-mobile"i>
+							<li class="invisible-mobile">
 								<a href="#" class="user-status" data-status="offline">
 									<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
 								</a>
 							</li>
 							<!-- XXX start of mobile collapsible items -->
 							<li class="visible-mobile">
-								<a component="header/noprofilelink" id="user-status-collapse-toggle" data-toggle="collapse" data-target=".user-status-toggle-collapsible" role="button" aria-expanded="false" aria-controls=".user-status-toggle-collapsible"  href="#">
+								<a id="user-status-collapse-toggle" data-toggle="collapse" data-target=".user-status-toggle-collapsible" role="button" aria-expanded="false" aria-controls=".user-status-toggle-collapsible">
 									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 							</li>
@@ -137,8 +137,11 @@
 
 							<li role="presentation" class="divider"></li>
 							<li>
-								<a component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
+								<a class="invisible-mobile" component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
 									<i class="fa fa-fw fa-edit"></i> <span>[[user:edit-profile]]</span>
+								</a>
+								<a class="visible-mobile" component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+									<i class="fa fa-fw fa-edit"></i> <span>[[user:my-profile]]</span>
 								</a>
 							</li>
 							<li>
