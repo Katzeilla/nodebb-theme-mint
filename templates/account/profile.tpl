@@ -77,15 +77,6 @@
 			<strong><a href="{websiteLink}" rel="nofollow noopener noreferrer">{websiteName}</a></strong>
 			<!-- ENDIF websiteName -->
 
-			<!-- IF location -->
-			<span>[[user:location]]</span>
-			<strong>{location}</strong>
-			<!-- ENDIF location -->
-
-			<!-- IF age -->
-			<span>[[user:age]]</span>
-			<strong>{age}</strong>
-			<!-- ENDIF age -->
 		</div>
 	</div>
 

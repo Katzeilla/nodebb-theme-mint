@@ -68,20 +68,6 @@
 						<!-- ENDIF allowWebsite -->
 
 						<div class="control-group">
-							<label class="control-label" for="inputLocation">[[user:location]]</label>
-							<div class="controls">
-								<input class="form-control" type="text" id="inputLocation" placeholder="[[user:location]]" value="{location}">
-							</div>
-						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
-							<div class="controls">
-								<input class="form-control" id="inputBirthday" value="{birthday}" placeholder="mm/dd/yyyy">
-							</div>
-						</div>
-
-						<div class="control-group">
 							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
 							<div class="controls">
 
@@ -95,7 +81,6 @@
 								</select>
 							</div>
 						</div>
-
 						<!-- IF allowAboutMe -->
 						<div class="control-group">
 							<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
