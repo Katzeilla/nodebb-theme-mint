@@ -48,7 +48,7 @@
 				<div class="human-readable-number" title="{profileviews}">{profileviews}</div>
 				<span class="stat-label">[[user:profile_views]]</span>
 			</div>
-
+			<!--
 			<div class="stat">
 				<div class="human-readable-number" title="{followerCount}">{followerCount}</div>
 				<span class="stat-label">[[user:followers]]</span>
@@ -58,6 +58,7 @@
 				<div class="human-readable-number"  title="{followingCount}">{followingCount}</div>
 				<span class="stat-label">[[user:following]]</span>
 			</div>
+			-->
 		</div>
 
 		<div class="text-center profile-meta">
