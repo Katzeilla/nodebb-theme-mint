@@ -50,7 +50,6 @@
 
 		<li class="divider"></li>
 		<li><a href="{config.relative_path}/user/{userslug}/following">[[user:following]]</a></li>
-		<li><a href="{config.relative_path}/user/{userslug}/followers">[[user:followers]]</a></li>
 		<!-- IF showHidden -->
 		<li><a href="{config.relative_path}/user/{userslug}/blocks">[[user:blocks]]</a></li>
 		<!-- ENDIF showHidden -->
