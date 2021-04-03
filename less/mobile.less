@@ -4,8 +4,30 @@
 	-webkit-overflow-scrolling: touch;
 }
 
+// large screen
+@media (min-width:768px) {
+	.invisible-mobile {
+		display: list-item;
+	}
+	.visible-mobile {
+		display: none;
+	}
+}
+
+// small screen
+@media (max-width: 767px) {
+	.invisible-mobile {
+		display: none;
+	}
+	.visible-mobile {
+		display: list-item;
+	}
+}
+
+
 /* iPhone 5 and other such devices */
 @media (max-width: @screen-sm-max) {
+
 	.chat-modal {
 		width: 100%;
 		height: 100%;
@@ -34,6 +56,7 @@
 }
 
 @media (max-width: @screen-md-max) {
+
 	body {
 		padding-top: 0;
 		padding-bottom: 0;

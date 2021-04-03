@@ -76,32 +76,65 @@
 						</label>
 						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
 						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
-							<li>
+
+
+							<li class="invisible-mobile">
 								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
 									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 							</li>
-							<li role="presentation" class="divider"></li>
-							<li>
+							<li role="presentation" class="invisible-mobile divider"></li>
+							<li class="invisible-mobile">
 								<a href="#" class="user-status" data-status="online">
-									<i class="fa fa-fw fa-circle status online"></i><span <!-- IF user.online -->class="bold"<!-- ENDIF user.online -->> [[global:online]]</span>
+									<i class="fa fa-fw fa-circle status online "></i><span <!-- IF user.online -->class="bold"<!-- ENDIF user.online -->> [[global:online]]</span>
 								</a>
 							</li>
-							<li>
+							<li class="invisible-mobile">
 								<a href="#" class="user-status" data-status="away">
 									<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
 								</a>
 							</li>
-							<li>
+							<li class="invisible-mobile">
 								<a href="#" class="user-status" data-status="dnd">
 									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
 								</a>
 							</li>
-							<li>
+							<li class="invisible-mobile"i>
 								<a href="#" class="user-status" data-status="offline">
 									<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
 								</a>
 							</li>
+							<!-- XXX start of mobile collapsible items -->
+							<li class="visible-mobile">
+								<a component="header/noprofilelink" data-toggle="collapse" data-target=".user-status-toggle-collapsible" role="button" aria-expanded="false" aria-controls=".user-status-toggle-collapsible"  href="#">
+									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
+								</a>
+							</li>
+							<div class="user-status-toggle-collapsible collapse">
+							<li role="presentation" class="divider visible-mobile"></li>
+							<li class="visible-mobile">
+								<a role="button" data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" data-toggle=".user-status-toggle-collapsible" class="user-status" data-status="online">
+									<i class="fa fa-fw fa-circle status online "></i><span <!-- IF user.online -->class="bold"<!-- ENDIF user.online -->> [[global:online]]</span>
+								</a>
+							</li>
+							<li class="visible-mobile">
+								<a data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" class="user-status" data-status="away">
+									<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
+								</a>
+							</li>
+							<li class="visible-mobile">
+								<a data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" class="user-status" data-status="dnd">
+									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
+								</a>
+							</li>
+							<li class="visible-mobile">
+								<a data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" class="user-status" data-status="offline">
+									<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
+								</a>
+							</li>
+							</div>
+							<!-- XXX end of mobile collapsible items -->
+
 							<li role="presentation" class="divider"></li>
 							<li>
 								<a component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
