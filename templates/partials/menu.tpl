@@ -141,7 +141,7 @@
 									<i class="fa fa-fw fa-edit"></i> <span>[[user:edit-profile]]</span>
 								</a>
 								<a class="visible-mobile" component="header/profilelink" href="{relative_path}/user/{user.userslug}">
-									<i class="fa fa-fw fa-edit"></i> <span>[[user:my-profile]]</span>
+									<i class="fa fa-fw fa-edit"></i> <span>[[mint:my-profile]]</span>
 								</a>
 							</li>
 							<li>
