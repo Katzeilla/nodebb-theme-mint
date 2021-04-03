@@ -16,7 +16,7 @@
 		<input type="hidden" name="tid" value="{tid}" />
 		<input type="hidden" name="_csrf" value="{config.csrf_token}" />
 		<div class="quickreply-message">
-			<textarea name="content" component="topic/quickreply/text" class="form-control" rows="5"></textarea>
+			<textarea style="border-radius: 5px;" name="content" component="topic/quickreply/text" class="form-control" rows="5"></textarea>
 		</div>
 		<button type="submit" component="topic/quickreply/button" class="btn btn-primary pull-right">[[mint:submit-reply]]</button>
 	</form>
