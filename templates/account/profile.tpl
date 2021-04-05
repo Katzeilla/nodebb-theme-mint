@@ -62,9 +62,9 @@
 		</div>
 
 		<div class="text-center profile-meta">
-			<span>[[user:joined]]</span>
-			<strong class="timeago" title="{joindateISO}"></strong>
-
+			<span>[[mint:daysincejoin]]</span>
+			<strong class="timeago" title="{joindateISO}" id="daySinceJoin"></strong>
+			<span>[[mint:day]]</span>
 			<span>[[user:lastonline]]</span>
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
 
