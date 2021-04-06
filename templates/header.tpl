@@ -15,6 +15,8 @@
 		};
 	</script>
 
+	<script src="/plugins/nodebb-theme-mint/mdui/mdui.min.js"></script>
+
 	<!-- IF useCustomHTML -->
 	{{customHTML}}
 	<!-- END -->
