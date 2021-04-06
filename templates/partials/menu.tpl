@@ -95,11 +95,6 @@
 								</a>
 							</li>
 							<li class="invisible-mobile">
-								<a href="#" class="user-status" data-status="dnd">
-									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
-								</a>
-							</li>
-							<li class="invisible-mobile">
 								<a href="#" class="user-status" data-status="offline">
 									<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
 								</a>
@@ -120,11 +115,6 @@
 							<li class="visible-mobile">
 								<a data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" class="user-status" data-status="away">
 									<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
-								</a>
-							</li>
-							<li class="visible-mobile">
-								<a data-toggle="collapse" data-target=".user-status-toggle-collapsible" aria-controls=".user-status-toggle-collapsible" class="user-status" data-status="dnd">
-									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
 								</a>
 							</li>
 							<li class="visible-mobile">
