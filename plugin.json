@@ -11,6 +11,7 @@
 	],
 	"scripts": [
 		"lib/persona.js",
+		"lib/modules/mdui.js",
 		"lib/modules/nprogress.js",
 		"lib/modules/autohidingnavbar.min.js",
 		"lib/modules/quickreply.js"
