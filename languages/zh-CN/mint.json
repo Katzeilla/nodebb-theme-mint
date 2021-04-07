@@ -1,5 +1,11 @@
 {
     "submit-reply": "提交回复",
+    "day": "　天",
+    "daysincejoin": "喵龄",
     "my-profile": "我的",
-    "mobile-menu-side": "调换聊天侧边栏与菜单栏"
+    "mobile-menu-side": "调换聊天侧边栏与菜单栏",
+    "disconnected": "(T ^ T) 连接暂时断开了，稍等呐～",
+    "connected": "|´・ω・)ノ 欢迎回来～",
+    "reconnected": "(๑>◡<๑) 又连上了～"
+
 }
