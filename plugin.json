@@ -10,6 +10,7 @@
 		{ "hook": "filter:topic.build", "method": "addUserToTopic" }
 	],
 	"scripts": [
+		"lib/mint.js",
 		"lib/persona.js",
 		"lib/modules/nprogress.js",
 		"lib/modules/autohidingnavbar.min.js",
