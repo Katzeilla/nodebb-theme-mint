@@ -18,5 +18,5 @@
 <div class="avatar avatar-sm" style="background-color: {downvoters.icon:bgColor};">{downvoters.icon:text}</div>
 <!-- ENDIF downvoters.picture -->
 </a>
-<!-- END downvoters -->
 {{{ end downvoters }}}
+<!-- ENDIF showDownvotes -->
