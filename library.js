@@ -1,18 +1,20 @@
 'use strict';
 
-var striptags = require('striptags');
-var meta = require.main.require('./src/meta');
-var user = require.main.require('./src/user');
+// server-side functions
+
+const striptags = require('striptags');
+const meta = require.main.require('./src/meta');
+const user = require.main.require('./src/user');
 
 var library = {};
+
+library.mint = require('./lib/mint.backend/mint.backend').mint;
 
 library.init = function(params, callback) {
 	var app = params.router;
 	var middleware = params.middleware;
-
 	app.get('/admin/plugins/persona', middleware.admin.buildHeader, renderAdmin);
 	app.get('/api/admin/plugins/persona', renderAdmin);
-
 	callback();
 };
 
