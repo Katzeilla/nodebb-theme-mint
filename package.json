@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "pulling": "^2.0.0",
-    "striptags": "^3.1.1"
+    "striptags": "^3.1.1",
+    "async": "^1.5.2"
   }
 }
