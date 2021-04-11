@@ -1,16 +1,41 @@
+.mint-like-avatars {
+	margin-top: 3px;
+	padding-left: 61px; // align with post content
+	@media (max-width: @screen-xs-max) {
+		padding-left: 0px !important;
+	}
+}
+
 .post-like-avatar-img {
 	margin-right: 0px;
 	border-radius: unset;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
 }
 
 .post-like-avatar-icon {
 	margin-right: 0px;
 	border-radius: unset;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+}
+
+@media (max-width: @screen-md-max) or ( max-width: @screen-xs-max) {
+
+.post-like-avatar-img {
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
+	}
 
+.post-like-avatar-icon {
+	margin-right: 0px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	}
 }
+
+
