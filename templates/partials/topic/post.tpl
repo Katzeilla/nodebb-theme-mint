@@ -6,7 +6,7 @@
 			<!-- ELSE -->
 			<div component="user/picture" data-uid="{posts.user.uid}" class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
 			<!-- ENDIF posts.user.picture -->
-			<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
+			<i component="user/status" class="hide fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
 
 		</a>
 	</div>
@@ -55,7 +55,7 @@
 
 <div class="clearfix post-footer">
 	<!-- IF posts.user.signature -->
-	<div component="post/signature" data-uid="{posts.user.uid}" class="post-signature">{posts.user.signature}</div>
+	<div component="post/signature" data-uid="{posts.user.uid}" class="hide post-signature">{posts.user.signature}</div>
 	<!-- ENDIF posts.user.signature -->
 
 	<small class="pull-right">
