@@ -9,7 +9,7 @@
 <span class="<!-- IF !posts.upvotes -->hide<!-- ENDIF !posts.upvotes --><!-- IF posts.upvoted -->liked <!-- ENDIF posts.upvoted -->" style="font-size: 14px">{posts.upvotes}</span>
     <div class="btn-group">
 <!-- count -> 14px | btn icon 16px -->
-        <button component="mint/likes/toggle" type="button" class="mint-likes-toggle btn btn-default mdui-ripple">
+        <button component="mint/likes/toggle" type="button" class="mint-likes-toggle btn btn-xs btn-default mdui-ripple">
 <i  style="font-size: 16px !important;" class="fa fa-heart-o"></i>
 </button>
     </div>
