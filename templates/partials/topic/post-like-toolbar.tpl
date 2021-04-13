@@ -6,10 +6,10 @@
 	</div>
 	</small>
 	<small class="pull-right">
-<span class="<!-- IF posts.upvoted -->liked<!-- ENDIF posts.upvoted --> ns-likes-toggle" style="font-size: 14px">{posts.votes}</span>            
+<span class="<!-- IF !posts.upvotes -->hide<!-- ENDIF !posts.upvotes --><!-- IF posts.upvoted -->liked <!-- ENDIF posts.upvoted -->" style="font-size: 14px">{posts.upvotes}</span>
     <div class="btn-group">
 <!-- count -> 14px | btn icon 16px -->
-        <button component="ns/likes/toggle" type="button" class="mint-like-toggle btn btn-default btn-xs mdui-ripple">
+        <button component="mint/likes/toggle" type="button" class="mint-likes-toggle btn btn-default mdui-ripple">
 <i  style="font-size: 16px !important;" class="fa fa-heart-o"></i>
 </button>
     </div>
