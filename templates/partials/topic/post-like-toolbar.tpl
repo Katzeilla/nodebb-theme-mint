@@ -6,11 +6,11 @@
 	</div>
 	</small>
 	<small class="pull-right">
-<span class="<!-- IF !posts.upvotes -->hide<!-- ENDIF !posts.upvotes --><!-- IF posts.upvoted -->liked <!-- ENDIF posts.upvoted -->" style="font-size: 14px">{posts.upvotes}</span>
+<span component="mint/likes/counter" data-pid="{posts.pid}" class="<!-- IF !posts.upvotes -->hide<!-- ENDIF !posts.upvotes --><!-- IF posts.upvoted -->liked <!-- ENDIF posts.upvoted -->" style="font-size: 14px">{posts.upvotes}</span>
     <div class="btn-group">
 <!-- count -> 14px | btn icon 16px -->
-        <button component="mint/likes/toggle" type="button" class="mint-likes-toggle btn btn-xs btn-default mdui-ripple">
-<i  style="font-size: 16px !important;" class="fa fa-heart-o"></i>
-</button>
+        <button component="mint/likes/toggle" type="button" data-pid="{posts.pid}" class="mint-likes-toggle btn btn-xs btn-default mdui-ripple">
+	<i  style="font-size: 16px !important;" class="fa fa-heart-o"></i>
+	</button>
     </div>
 	</small>
