@@ -15,6 +15,7 @@
 	"scripts": [
 		"lib/mint.js",
 		"lib/persona.js",
+		"lib/modules/post-like-toolbar.js",
 		"lib/modules/nprogress.js",
 		"lib/modules/autohidingnavbar.min.js",
 		"lib/modules/quickreply.js"
