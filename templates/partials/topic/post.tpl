@@ -90,5 +90,13 @@
 	</a>
 	<!-- XXXENDIF !hideReplies -->
 </div>
-
+<div class="clearfix post-footer">
+	<small class="pull-right">
+		<span class="post-tools">
+			<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
+			<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
+		</span>
+      <!-- IMPORT partials/topic/post-menu.tpl -->
+</small>
+</div>
 <hr />
