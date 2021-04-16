@@ -95,7 +95,7 @@
 <li role="presentation" class="divider"></li>
 <li role="presentation">
 	<a component="post/flag" role="menuitem" tabindex="-1" href="#">
-		[[topic:flag_title]]
+		[[mint:flagContent]]
 	</a>
 </li>
 <!-- ENDIF posts.display_flag_tools -->
